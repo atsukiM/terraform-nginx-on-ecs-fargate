@@ -1,4 +1,4 @@
 variable "cidr_block" {
-    description = "VPCのCIDR"
-    type = string
+  description = "VPCのCIDR"
+  type        = string
 }
