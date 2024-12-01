@@ -4,6 +4,8 @@ resource "aws_ecs_cluster" "main" {
 
 resource "aws_ecs_task_definition" "main" {
   family = var.family_name
+  cpu    = 512
+  memory = 1024
   container_definitions = jsonencode([
     {
       name      = "nginx"
