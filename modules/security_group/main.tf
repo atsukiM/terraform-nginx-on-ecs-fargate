@@ -1,6 +1,5 @@
 resource "aws_security_group" "allow_all_traffic" {
   name        = "nginx-on-fargate"
-  description = "ECSコンテナ用のセキュリティグループ"
   vpc_id      = var.vpc_id
 }
 
