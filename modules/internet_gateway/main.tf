@@ -1,3 +1,3 @@
 resource "aws_internet_gateway" "main" {
-    vpc_id = var.vpc_id
+  vpc_id = var.vpc_id
 }

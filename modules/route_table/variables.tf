@@ -4,11 +4,11 @@ variable "vpc_id" {
 }
 
 variable "subnet_map" {
-    description = "サブネットのマップ"
-    type = map(string)
+  description = "サブネットのマップ"
+  type        = map(string)
 }
 
 variable "gateway_id" {
-    description = "インターネットゲートウェイのID"
-    type = string
+  description = "インターネットゲートウェイのID"
+  type        = string
 }

@@ -21,7 +21,7 @@ module "internet_gateway" {
 module "route_table" {
   source = "../../modules/route_table"
 
-  vpc_id = module.vpc.vpc_id
+  vpc_id     = module.vpc.vpc_id
   subnet_map = module.subnet.subnet_map
   gateway_id = module.internet_gateway.gateway_id
 }
